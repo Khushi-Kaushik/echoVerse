@@ -1,5 +1,8 @@
 res://default_bus_layout.tres
-res://scenes/minigames/breathing_minigame.tscn
-res://scenes/minigames/breathing_minigame.gd
-res://scenes/debug.tscn
+res://scenes/levels/Intro.tscn
+res://scenes/characters/Player.tscn
+res://scenes/levels/HouseInside.tscn
 res://scenes/levels/Outside.tscn
+res://scenes/props/House.tscn
+res://scenes/characters/Npc.tscn
+res://scenes/levels/calm_haven.tscn
