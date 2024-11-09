@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxy0yfkjrat1d"]
+
+[ext_resource type="Texture2D" uid="uid://c4qu7smydxdjt" path="res://textures/lights/2d_lights_and_shadows_neutral_point_light.png" id="1_8t53j"]
+[ext_resource type="Texture2D" uid="uid://b84y1s4n0g87q" path="res://textures/pj/smoke_particle.png" id="1_ah76j"]
+[ext_resource type="Script" path="res://objects/message_lantern.gd" id="1_nc4w6"]
+
+[node name="MessageLantern" type="Node2D"]
+position = Vector2(352, 230)
+script = ExtResource("1_nc4w6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ah76j")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+color = Color(1, 0.447059, 1, 1)
+texture = ExtResource("1_8t53j")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -101.0
+offset_top = -144.0
+offset_right = 117.0
+offset_bottom = -58.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "A message"
+horizontal_alignment = 1
+vertical_alignment = 2
+autowrap_mode = 2

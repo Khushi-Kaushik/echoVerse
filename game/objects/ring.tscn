@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cutcdktphcx8b"]
+
+[ext_resource type="Script" path="res://objects/ring.gd" id="1_3hdwa"]
+
+[node name="Ring" type="Node2D"]
+script = ExtResource("1_3hdwa")
+ring_color = Color(0, 0, 0, 1)
