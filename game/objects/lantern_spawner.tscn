@@ -9,3 +9,5 @@ script = ExtResource("1_d5kxa")
 autostart = true
 
 [node name="Children" type="Node2D" parent="."]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]

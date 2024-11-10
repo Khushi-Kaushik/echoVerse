@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://4bvwcddg4lau"]
+[gd_scene load_steps=11 format=3 uid="uid://4bvwcddg4lau"]
 
 [ext_resource type="Script" path="res://scenes/minigames/breathing_minigame.gd" id="1_jvav1"]
 [ext_resource type="FontFile" uid="uid://dx4e24kkxehpf" path="res://fonts/Poppins-Regular.ttf" id="2_5245j"]
 [ext_resource type="PackedScene" uid="uid://cutcdktphcx8b" path="res://objects/ring.tscn" id="2_a53mc"]
+[ext_resource type="AudioStream" uid="uid://cyeh2dux5hyo6" path="res://scenes/levels/689567__mttvn__breathingpatterns_4-7-8-0.mp3" id="4_mmtsk"]
 
 [sub_resource type="Animation" id="Animation_hlqxl"]
 resource_name = "Instructions"
@@ -577,6 +578,10 @@ libraries = {
 "": SubResource("AnimationLibrary_rhnxx")
 }
 autoplay = "entry"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_mmtsk")
+autoplay = true
 
 [connection signal="pressed" from="CanvasLayer/Instructions/HBoxContainer/1MinBtn" to="." method="_start_minigame" binds= [60]]
 [connection signal="pressed" from="CanvasLayer/Instructions/HBoxContainer/3MinBtn" to="." method="_start_minigame" binds= [180]]

@@ -1,1 +1,13 @@
 res://default_bus_layout.tres
+res://scenes/levels/calm_haven.tscn
+res://resources/tilesets/calm_haven_tileset.tres
+res://scenes/levels/Intro.tscn
+res://scenes/characters/Player.tscn
+res://scenes/levels/HouseInside.tscn
+res://scenes/levels/Outside.tscn
+res://objects/lantern_spawner.tscn
+res://objects/message_lantern.tscn
+res://objects/tree.tscn
+res://scenes/minigames/breathing_minigame.tscn
+res://scenes/minigames/simon_says_minigame.tscn
+res://objects/lantern_spawner.gd
