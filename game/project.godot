@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="EcoVerse"
-run/main_scene="res://scenes/levels/Intro.tscn"
+run/main_scene="res://scenes/levels/Menu.tscn"
 config/use_custom_user_dir=true
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"

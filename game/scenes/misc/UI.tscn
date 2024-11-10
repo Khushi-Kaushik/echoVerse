@@ -28,6 +28,7 @@ anchors_preset = 15
 visible = false
 
 [node name="Healthbar" parent="." instance=ExtResource("4")]
+visible = false
 offset_right = 14.0
 
 [node name="TouchInterface" type="Node2D" parent="."]
