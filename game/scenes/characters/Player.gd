@@ -8,7 +8,7 @@ in the AssetLib if you want to make something more complex. Also it shares code 
 and probably both should extend some parent script
 """
 
-@export var WALK_SPEED: int = 350 # pixels per second
+@export var WALK_SPEED: int = 100 # pixels per second
 @export var ROLL_SPEED: int = 1000 # pixels per second
 @export var hitpoints: int = 3
 
@@ -163,6 +163,11 @@ func despawn():
 	get_tree().reload_current_scene()
 	pass
 
+func set_blocked() -> void:
+	self.state = STATE_BLOCKED
+
+func set_unblocked() -> void:
+	self.state = STATE_IDLE
 
 #func _on_hurtbox_area_entered(area):
 	#if state != STATE_DIE and area.is_in_group("enemy_weapons"):

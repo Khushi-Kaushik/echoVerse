@@ -3,7 +3,6 @@ extends Node2D
 @export var SPEED: int = 20
 @export var XOFFSET: int = 50
 
-
 var initial_x: float
 var time: float = 0
 var message: String = "Hum jeetenge CBS"

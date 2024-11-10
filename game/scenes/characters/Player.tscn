@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" path="res://scenes/characters/debug_character.tscn" id="3"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
-radius = 35.8589
-height = 71.7178
+radius = 15.7556
+height = 31.5112
 
 [sub_resource type="Animation" id="2"]
 resource_name = "die"
@@ -836,8 +836,11 @@ position = Vector2(585.638, 309.087)
 script = ExtResource("2")
 
 [node name="sprite" type="Sprite2D" parent="."]
-position = Vector2(6.30249, -86.9744)
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-1.638, -51.087)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("1")
+flip_h = true
 hframes = 8
 vframes = 4
 frame = 9
@@ -848,9 +851,11 @@ rotation = 1.5708
 shape = SubResource("1")
 
 [node name="player_sword" type="Area2D" parent="."]
+visible = false
 position = Vector2(6.30249, -86.9744)
 
 [node name="slash" type="CollisionPolygon2D" parent="player_sword"]
+visible = false
 polygon = PackedVector2Array(-134.513, -92.9393, -124.246, 19.4555, -59.4026, 109.155, 76.2278, 112.938, 75.147, 26.4802, -2.66479, 20.5363, -36.1671, -8.64319, -57.2411, -40.5244)
 disabled = true
 
@@ -870,6 +875,7 @@ properties = ["linear_vel", "roll_direction", "facing"]
 enabled = false
 
 [node name="hurtbox" type="Area2D" parent="."]
+visible = false
 
 [node name="col" type="CollisionShape2D" parent="hurtbox"]
 position = Vector2(0, -78.0211)
