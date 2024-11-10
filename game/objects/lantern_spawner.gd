@@ -17,7 +17,7 @@ func _ready() -> void:
 	self.timer.connect("timeout", self._spawn)
 
 func _spawn() -> void:
-	if idx >= msg.length:
+	if idx >= msg.size():
 		return
 	
 	var lantern = LanternScene.instantiate()
