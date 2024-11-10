@@ -1,5 +1,7 @@
 extends Node2D
 
+signal finished
+
 var duration: float = 120
 
 @onready var timeBtnContainer: HBoxContainer = $CanvasLayer/Instructions/HBoxContainer
@@ -23,7 +25,7 @@ func _run_game_loop(count: int) -> void:
 	# 1. Grow the ring
 	gameLabel.set_text("Breathe In")
 	var tween = get_tree().create_tween()
-	tween.tween_property(circle, "ring_radius_outer", 184, 4).set_trans(Tween.TRANS_LINEAR)
+	tween.tween_property(circle, "ring_radius_outer", 60, 4).set_trans(Tween.TRANS_LINEAR)
 	await tween.finished
 	
 	# 2. Wait
@@ -49,4 +51,5 @@ func _start_game() -> void:
 	_run_game_loop(count)
 
 func _delete_self() -> void:
+	self.emit_signal("finished")
 	self.queue_free()
