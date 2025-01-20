@@ -45,9 +45,9 @@ const App = () => {
         <Navigation />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="WellnessZone.jsx" element={<WellnessZone />} />
-          <Route path="FocusSpace.jsx" element={<FocusSpace />} />
-          <Route path="SoundHaven.jsx" element={<SoundHaven />} />
+          <Route path="wellness" element={<WellnessZone />} />
+          <Route path="focus" element={<FocusSpace />} />
+          <Route path="sound" element={<SoundHaven />} />
           <Route path="/zen" element={<ZenPage />} />
         </Routes>
       </div>
